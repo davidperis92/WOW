@@ -113,7 +113,7 @@ class @WOW
     @scrolled = true
     @config   = @util().extend(options, @defaults)
     if options.scrollContainer?
-      @config.scrollContainer = document.querySelector(options.scrollContainer)
+      @config.scrollContainer = options.scrollContainer
     # Map of elements to animation names:
     @animationNameCache = new WeakMap()
     @wowEvent = @util().createEvent(@config.boxClass)
